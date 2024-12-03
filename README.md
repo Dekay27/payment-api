@@ -1,5 +1,3 @@
-# Saving the enhanced API documentation in Markdown format
-markdown_content = """
 # **Bank API - Fountainhead Christian School**
 
 ## **Table of Contents**
@@ -201,14 +199,8 @@ GET /verify?index_no=12345&trans_ref=BANK123
 
 ## **Contact Information**
 For questions or support:
-- **Email**: support@hightelconsult.com
-- **Phone**: +123-456-7890
+- **Email**: dannykumah27@gmail.com
+- **Phone**: +233 (0)26 997 7536
 - **Website**: [https://www.hightelconsult.com](https://www.hightelconsult.com)
 """
 
-# Save the Markdown content to a file
-file_path = "/mnt/data/Enhanced_Bank_API_Documentation.md"
-with open(file_path, "w") as file:
-    file.write(markdown_content)
-
-file_path
