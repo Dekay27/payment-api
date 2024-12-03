@@ -79,7 +79,7 @@ Authorization: Bearer {token}
 
 ### **1. Verify Student Details**
 **Method**: `GET`  
-**URL**: `https://api.hightelconsult.com/student`
+**URL**: `https://pay.hightelbank.com/student`
 
 **Description**:  
 Verifies student details using their `index_no`.
@@ -106,7 +106,7 @@ GET /student?index_no=12345
 
 ### **2. Post a Transaction**
 **Method**: `POST`  
-**URL**: `https://api.hightelconsult.com/pay`
+**URL**: `https://pay.hightelbank.com/pay`
 
 **Description**:  
 Posts a payment transaction to the system.
@@ -147,7 +147,7 @@ POST /pay
 
 ### **3. Retrieve a Single Payment**
 **Method**: `GET`  
-**URL**: `https://api.hightelconsult.com/verify`
+**URL**: `https://pay.hightelbank.com/verify`
 
 **Description**:  
 Retrieves details of a specific payment using `index_no` and `trans_ref`.
