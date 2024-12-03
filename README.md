@@ -202,5 +202,3 @@ For questions or support:
 - **Email**: dannykumah27@gmail.com
 - **Phone**: +233 (0)26 997 7536
 - **Website**: [https://www.hightelconsult.com](https://www.hightelconsult.com)
-"""
-
