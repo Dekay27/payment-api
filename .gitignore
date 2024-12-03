@@ -1,0 +1,19 @@
+# Ignore specific files
+secret_config.json
+credentials.txt
+
+# Ignore all .log files
+*.log
+
+# Ignore all files in the "temp" folder
+classes/
+config/
+vendor/
+
+# Ignore compiled files
+*.php
+*.json
+*.lock
+
+# Ignore environment files
+.env
