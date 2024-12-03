@@ -34,13 +34,13 @@ The Bank API allows seamless integration with Fountainhead Christian School's sy
 To authenticate with the API, create an account by sending user details in the body of the request.
 
 **Sample Request**:
-\`\`\`json
+```json
 POST /verify
 {
   "username": "example_user",
   "password": "securepassword123"
 }
-\`\`\`
+```
 
 ---
 
@@ -52,26 +52,26 @@ POST /verify
 Log in to retrieve the JWT (JSON Web Token). Use this token in all subsequent API calls as an authorization header.
 
 **Sample Request**:
-\`\`\`json
+```json
 POST /login
 {
   "username": "example_user",
   "password": "securepassword123"
 }
-\`\`\`
+```
 
 **Response**:
-\`\`\`json
+```json
 {
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 }
-\`\`\`
+```
 
 **Usage**:  
 Include the token as a Bearer Token in the `Authorization` header:
-\`\`\`
+```
 Authorization: Bearer {token}
-\`\`\`
+```
 
 ---
 
@@ -89,18 +89,18 @@ Verifies student details using their `index_no`.
 | `index_no`  | String | Yes      | Index number of the student.  |
 
 **Sample Request**:
-\`\`\`http
+```http
 GET /student?index_no=12345
-\`\`\`
+```
 
 **Sample Response**:
-\`\`\`json
+```json
 {
   "index_no": "12345",
   "full_name": "John Doe",
   "status": "verified"
 }
-\`\`\`
+```
 
 ---
 
@@ -122,7 +122,7 @@ Posts a payment transaction to the system.
 | `bank`           | String | Yes      | Name of the bank.                          |
 
 **Sample Request**:
-\`\`\`json
+```json
 POST /pay
 {
   "index_no": "12345",
@@ -133,15 +133,15 @@ POST /pay
   "trans_ref": "BANK123",
   "bank": "Global Bank"
 }
-\`\`\`
+```
 
 **Sample Response**:
-\`\`\`json
+```json
 {
   "status": "success",
   "message": "Payment recorded successfully"
 }
-\`\`\`
+```
 
 ---
 
@@ -158,12 +158,12 @@ Retrieves details of a specific payment using `index_no` and `trans_ref`.
 | `trans_ref` | String | Yes      | Unique bank transaction ID.           |
 
 **Sample Request**:
-\`\`\`http
+```http
 GET /verify?index_no=12345&trans_ref=BANK123
-\`\`\`
+```
 
 **Sample Response**:
-\`\`\`json
+```json
 {
   "index_no": "12345",
   "trans_ref": "BANK123",
@@ -171,7 +171,7 @@ GET /verify?index_no=12345&trans_ref=BANK123
   "amount_paid": 5000.00,
   "fee_type_code": "TUITION"
 }
-\`\`\`
+```
 
 ---
 
